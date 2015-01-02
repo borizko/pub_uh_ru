@@ -1,0 +1,28 @@
+#!/usr/bin/env python
+# coding: utf-8
+import uh_ru
+import sys
+try:
+  name = sys.argv[1]
+except:
+  name = None
+try:
+  url = sys.argv[2]
+except:
+  url = "http://uh.ru"
+driver = uh_ru.Uh_ru()
+driver.start()
+if name == "wl":
+  driver.driver.get(url)
+elif name == "boriz":
+  driver.login("boriz", "borizko08081989")
+elif name == "mels-r":
+  driver.login("mels-r", "1234ewrt")
+elif name == "stiven123":
+  driver.login("stiven123", "qoryt46QW34p")
+elif name == "lobster_ah":
+  driver.login("lobster_ah", "WuTgkjsd12987TfhusGfj8766Lfdjh-124")
+elif name == "master-wl":
+  driver.login("master-wl", "WErdpt345Xr_SADs086653")
+else:
+  driver.login("tanya_ko", "tanya-korkmazova08081989")

@@ -1,0 +1,2 @@
+#!/usr/bin/env ruby
+`python /home/boriz/WORK/PUB_UHRU/pub.py`
